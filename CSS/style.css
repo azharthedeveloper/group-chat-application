@@ -1,0 +1,163 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: lightgrey;
+	font-family: sans-serif;
+}
+h1{
+	width: 100%;
+	background-color: black;
+	color: white;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+fieldset{
+	width: 40%;
+	border: 5px double black;
+	padding: 20px;
+	border-radius: 10px;
+}
+legend{
+	font-size: 20px;
+	font-weight: bolder;
+}
+input{
+	padding: 5px;
+}
+#header{
+	width: 100%;
+	background-color: black;
+	color: white;
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+	padding: 10px;
+}
+#header img{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+}
+#full_name{
+	font-size: 18px;
+	font-weight: bolder;
+	margin: 0px 10px;
+}
+#logout_btn{
+	margin: 0px 980px;
+	position: absolute;
+	padding: 10px;
+	border-radius: 10px;
+}
+#chat_box{
+	width: 100%;
+	height: 420px;
+	border: 3px solid black;
+	margin-top: 10px;
+	border-radius: 10px;
+	overflow-y: auto;
+}
+#send_message input{
+	width: 92%;
+	margin: 5px;
+	border-radius: 10px;
+}
+#send_message button{
+	width: 67px;
+	padding: 7px;
+	background-color: black;
+	color: white;
+	border: none;
+	border-radius: 10px;
+}
+#sender{
+	background-color: black;
+	color: white;
+	width: 60%;
+	margin: 10px;
+	padding: 10px;
+	float: right;
+	border-radius: 10px;
+}
+#sender img{
+	width: 40px;
+	height: 40px;
+	float: right;
+	clear: left;
+	border-radius: 50%;
+}
+#sender #msg_time{
+	float: left;
+	font-size: 10px;
+}
+#sender #user_name{
+	float: right;
+}
+#sender #message{
+	clear: both;
+	text-align: center;
+}
+
+#reciever{
+	background-color: white;
+	color: black;
+	width: 60%;
+	border: 2px solid black;
+	margin: 10px;
+	padding: 10px;
+	float: left;
+	border-radius: 10px;
+}
+#reciever img{
+	width: 40px;
+	height: 40px;
+	float: left;
+	clear: right;
+	border-radius: 50%;
+}
+#reciever #msg_time{
+	float: right;
+	font-size: 10px;
+}
+#reciever #user_name{
+	float: left;
+}
+#reciever #message{
+	clear: both;
+	text-align: center;
+}
+#header2{
+	background-color: black;
+	color: white;
+/*	margin-top: -42px;*/
+	padding: 30px;
+	text-align: center;
+	font-size: 25px;
+	font-weight: bolder;
+	border-radius: 10px;
+}
+#show_users{
+	width: 100%;
+	height: 460px;
+	border: 3px solid black;
+	margin-top: 10px;
+	border-radius: 10px;
+	overflow-y: auto;
+}
+#users{
+	display: flex;
+	align-items: center;
+	padding: 5px;
+}
+#users img{
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	margin: 0px 5px;
+}
+#users span{
+	margin: 0px 5px;
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemadesigner version="6.5">
+<source>
+<database charset="utf8mb4" collation="utf8mb4_general_ci">group_chat_application</database>
+</source>
+<canvas zoom="100">
+<tables>
+<table name="messages" view="standard">
+<left>306</left>
+<top>288</top>
+<width>234</width>
+<height>163</height>
+<sql_create_table>CREATE TABLE `messages` (
+  `message_id` int(11) NOT NULL AUTO_INCREMENT,
+  `message` text DEFAULT NULL,
+  `user_id` int(11) DEFAULT NULL,
+  `message_time` varchar(200) DEFAULT NULL,
+  `status` enum('0','1') DEFAULT NULL,
+  PRIMARY KEY (`message_id`),
+  KEY `user_id` (`user_id`),
+  CONSTRAINT `messages_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci</sql_create_table>
+</table>
+<table name="users" view="standard">
+<left>70</left>
+<top>105</top>
+<width>212</width>
+<height>231</height>
+<sql_create_table>CREATE TABLE `users` (
+  `user_id` int(11) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(200) DEFAULT NULL,
+  `last_name` varchar(200) DEFAULT NULL,
+  `email` varchar(200) DEFAULT NULL,
+  `password` varchar(200) DEFAULT NULL,
+  `is_online` enum('0','1') DEFAULT '0',
+  `img_name` varchar(200) DEFAULT NULL,
+  `img_path` varchar(200) DEFAULT NULL,
+  `log_time` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`user_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci</sql_create_table>
+</table>
+</tables>
+</canvas>
+</schemadesigner>
